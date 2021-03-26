@@ -53,7 +53,7 @@ function draw() {
 
     rotate(Rot)
 
-    background(220);
+    background(0);
 
     rect(-25, -25, 50);
 
@@ -63,7 +63,7 @@ function draw() {
 
     rotate(Rot)
 
-    background(220);
+    background(0);
 
     rect(-25, -25, 50);
 
