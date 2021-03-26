@@ -68,6 +68,16 @@ function draw() {
     rect(-25, -25, 50);
 
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 for(let i = 0;i<asteroider.length;i++){
     asteroider[i].update();
     asteroider[i].show();
