@@ -51,6 +51,7 @@ background(0);
   
   
   
+   //kan også bare undvære for løkken 
 for(let i = 0;i<asteroider.length;i++){
     asteroider[i].update();
     asteroider[i].show();
