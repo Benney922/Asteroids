@@ -1,2 +1,2 @@
 # Asteroids
-Spil, lavet til et skole projekt
+Spil, lavet til et skole projekt.
