@@ -23,7 +23,7 @@ function setup() {
   
   
   
-  
+ 
   //asteroider.push(new Asteroide());
   
   
@@ -50,16 +50,17 @@ background(0);
   
   
   
-  
-   //kan også bare undvære for løkken 
+ 
 for(let i = 0;i<asteroider.length;i++){
-    asteroider[i].update();
+  if(i<=5) {  //sørger for at det kun er 5 som spawner. MANGLER DOKUMENTATION.
+  asteroider[i].update();
     asteroider[i].show();
+  }
   }
     asteroider.push(new Asteroide());
 
 
-  
+ 
   
   
   
@@ -285,22 +286,20 @@ for(let i = 0;i<asteroider.length;i++){
 
 
 class Asteroide {
-  constructor() { //Ikke lavet
-    this.x = random(-100,width);
-    this.y = random(-100,height);
+  constructor() { 
     this.r = 20;
-    this.xdi = random(-1,1);
-    this.ydi = random(-1,1);
+    this.pos = createVector(random(width),random(height));
+    this.vel = p5.Vector.random2D();
+    //MANGLER DOKUMENTATION.
   }
   
   update(){ 
-  this.x += this.xdi;
-  this.y += this.ydi;
-       
+  this.pos.add(this.vel)
+
   }
   
   show(){ //ikke lavet men virker indtil videre
-    ellipse(this.x,this.y,this.r,this.r);
+    ellipse(this.pos.x,this.pos.y,this.r,this.r);
   }
   
 }
