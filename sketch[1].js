@@ -2,6 +2,9 @@ let asteroider = [];
 
 
 
+let Rad;
+
+let pos;
 
 
 
@@ -15,6 +18,10 @@ function setup() {
   
 
   
+  Rad = 3 * HALF_PI;
+
+  walker = new Walker(200, 200);
+
 
   
   
@@ -43,6 +50,10 @@ background(0);
 
   
   
+  walker.update();
+
+  walker.show();
+
   
   
   
