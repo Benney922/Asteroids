@@ -64,7 +64,7 @@ background(0);
   
  
 for(let i = 0;i<asteroider.length;i++){
-  if(i<=5) {  //sørger for at det kun er 5 som spawner.
+  if(i<=4) {  //sørger for at det kun er 5 som spawner.
   asteroider[i].update();
     asteroider[i].show();
   }
