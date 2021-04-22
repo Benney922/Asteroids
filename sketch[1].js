@@ -1,4 +1,4 @@
-
+let liv = 3;
 let asteroider = [];
 
 
