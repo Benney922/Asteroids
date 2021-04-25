@@ -29,6 +29,14 @@ class Asteroide {
     this.pos.y=height;
      }
     if (mouseX > this.pos.x-20 && mouseX < this.pos.x+20 && mouseY > this.pos.y-20 && mouseY < this.pos.y+20) {
+    this.t1 = this.t1/2;
+    this.t2 = this.t2/2;
+    this.t3 = this.t3/2;
+    this.t4 = this.t4/2;
+    this.t5 = this.t5/2;
+    this.t6 = this.t6/2;
+    this.t7 = this.t7/2;
+    this.r = this.r/2;
     }
    
   }
