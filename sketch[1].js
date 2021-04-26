@@ -85,20 +85,30 @@ for(let i = 0;i<asteroider.length;i++){
   
   
 }
+ //Sørger for at liv = 0 for at demonstrere hvordan det ville se ud.
+  if(mouseX > 300){
+    liv=0;
+  }
   if(liv==0){
   state=5;
     stroke(10);
     fill(255, 0, 0);
     textSize(55);
-    text('Bolle vandt', 62, 175);
+    text('GAME OVER', 32, 175);
     textSize(40);
     text('restart', 140, 250);
-if(mouseX > 140 && mouseX < 260 && mouseY > 215 && mouseY < 265){
-   
-       }
   }
 }
-
+function mouseClicked(){
+  if(mouseX > 140 && mouseX < 260 && mouseY > 215 && mouseY < 265){
+   reset();
+   state=3;
+       }
+}
 function reset(){
+  noStroke();
+  fill(0);
+  rect(0,0,400)
+  liv = 3;
   
 }
